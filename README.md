@@ -18,7 +18,7 @@
 
 ## Struttura del progetto
 
-````bitpost/
+```bitpost/
 ├── index.html         # Pagina principale (in sviluppo)
 ├── script.js          # Logica JavaScript (in sviluppo)
 ├── style.css          # Stili (opzionale, in sviluppo)
@@ -27,7 +27,8 @@
 │   ├── create.php     # Crea un nuovo post (in sviluppo)
 │   ├── read.php       # Legge tutti i post
 │   ├── read_single.php # Legge un singolo post (da implementare)
-│   └── delete.php     # Elimina un post (da implementare)```
+│   └── delete.php     # Elimina un post (da implementare)
+```
 
 ## Requisiti
 - XAMPP (o altro server con Apache, PHP e MySQL).
@@ -42,18 +43,18 @@
 3. Avvia Apache e MySQL tramite XAMPP.
 4. Crea il database bitpost in MySQL:
 
-CREATE DATABASE bitpost;
+```CREATE DATABASE bitpost;```
 
 5. Crea la tabella posts:
 
-USE bitpost;
+```USE bitpost;
 CREATE TABLE posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     content TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
+```
 6. Vai su http://localhost/bitpost/api/read.php per testare l’API.
 
 ## Stato del progetto
@@ -61,5 +62,3 @@ CREATE TABLE posts (
 
 ## Licenza
 MIT License (LICENSE) - Sentiti libero di usare e modificare questo codice per i tuoi scopi.
-
-````
